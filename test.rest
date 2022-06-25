@@ -1,0 +1,36 @@
+### create album
+POST http://localhost:5000/api/album/create
+Content-Type: application/json
+
+{
+    "name" : "e",
+    "year" : 2022
+}
+
+
+### read albums
+GET http://localhost:5000/api/albums/read?page=1&limit=2
+Content-Type: application/json
+
+### create songs
+POST http://localhost:5000/api/song/create
+Content-Type: application/json
+
+{
+        "album_id"      :    1,   
+        "title"         :   "akulah si tampan",
+        "year"          :   2021,
+        "genre"         :   "dangdut",
+        "performer"     :   "best",
+        "duration"      :   12
+}
+
+### create songs
+POST http://localhost:5000/api/album/find
+Content-Type: application/json
+
+{
+    "filter" : {
+        "id" : 1
+    }
+}
